@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AW Substrates Products Catalog</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f7941d",
+                        "primary-dark": "#e58210",
+                        "navy": "#1a1a2e",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#231a0f",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+  @media (max-width: 768px) {
+    #mobile-menu-btn { display: block !important; }
+    #nav-links { display: none !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #1a1a2e; padding: 0.5rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    #nav-links.nav-open { display: flex !important; }
+    #nav-links a { padding: 0.75rem 2rem !important; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    img { max-width: 100%; height: auto; }
+  }
+  a:hover { color: #f7941d !important; }
+</style></head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<header class="sticky top-0 z-50 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-6 lg:px-10 py-4 flex items-center justify-between whitespace-nowrap shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">layers</span>
+<h2 class="text-navy dark:text-white text-xl font-bold leading-tight tracking-tight">AW Substrates</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8 items-center">
+<nav style="background-color: #1a1a2e; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+  <a href="/" style="display: flex; align-items: center; padding: 0.75rem 0; text-decoration: none;">
+    <span style="color: #f7941d; font-weight: 900; font-size: 1.25rem;">AW</span>
+    <span style="color: white; font-weight: 400; font-size: 1.1rem; margin-left: 0.5rem;">Substrates</span>
+  </a>
+  <button id="mobile-menu-btn" onclick="document.getElementById('nav-links').classList.toggle('nav-open')" style="display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">&#9776;</button>
+  <div id="nav-links" style="display: flex; gap: 0;">
+    <a href="/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">Home</a>
+    <a href="/about/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">About</a>
+    <a href="/products/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">Products</a>
+    <a href="/services/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">Services</a>
+    <a href="/contact-us/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">Contact Us</a>
+  </div>
+</nav>
+<button class="flex items-center justify-center rounded-lg px-6 py-2.5 bg-primary hover:bg-primary-dark transition-colors text-white text-sm font-bold shadow-sm">
+                Call Now
+            </button>
+</div>
+<button class="lg:hidden text-slate-800 dark:text-slate-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex-1 flex flex-col w-full max-w-[1440px] mx-auto">
+<section class="bg-white dark:bg-slate-900 py-12 px-6 lg:px-12 border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-4xl">
+<h1 class="text-navy dark:text-white text-4xl lg:text-5xl font-black leading-tight tracking-tight mb-4">Our Substrate Solutions</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg lg:text-xl font-medium leading-relaxed">
+                    Custom stocking and sourcing for high-quality building materials and printing substrates tailored to your specific needs.
+                </p>
+</div>
+</section>
+<section class="flex flex-col lg:flex-row flex-1 px-6 lg:px-12 py-8 gap-8">
+<aside class="w-full lg:w-72 flex-shrink-0">
+<div class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 sticky top-24">
+<h3 class="text-navy dark:text-white text-lg font-bold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">filter_list</span>
+                        Categories
+                    </h3>
+<div class="space-y-4">
+<label class="flex items-start gap-3 cursor-pointer group">
+<input checked="" class="mt-1 h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary focus:ring-offset-0 transition-colors" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-300 text-sm font-medium group-hover:text-primary transition-colors">Rigid Media (Sintra Vers, PVC)</span>
+</label>
+<label class="flex items-start gap-3 cursor-pointer group">
+<input checked="" class="mt-1 h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary focus:ring-offset-0 transition-colors" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-300 text-sm font-medium group-hover:text-primary transition-colors">Paperboard (B-Flute, C2S)</span>
+</label>
+<label class="flex items-start gap-3 cursor-pointer group">
+<input checked="" class="mt-1 h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary focus:ring-offset-0 transition-colors" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-300 text-sm font-medium group-hover:text-primary transition-colors">Magnetic Materials (Newlife)</span>
+</label>
+<label class="flex items-start gap-3 cursor-pointer group">
+<input checked="" class="mt-1 h-5 w-5 rounded border-slate-300 dark:border-slate-600 bg-transparent text-primary focus:ring-primary focus:ring-offset-0 transition-colors" type="checkbox"/>
+<span class="text-slate-700 dark:text-slate-300 text-sm font-medium group-hover:text-primary transition-colors">Specialty Substrates (AkyPrint)</span>
+</label>
+</div>
+</div>
+</aside>
+<div class="flex-1">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md">
+<div class="w-full h-48 bg-slate-200 dark:bg-slate-700 bg-center bg-cover" data-alt="Stack of white rigid PVC boards" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAM4KD3gISAPnpeW_nQPO6XYSK4Zjhwgh97kbQT1tN-MThT5X-7E6uN1JTcrIioimAzG2awYzht5MMtPlKMbnRCCyt82KoiLHvL4D3q7Zli4U9SIHEwb_nYZdCMV-YgCeTtN6V5mDGtdRygaA18yahdwRTtZtibMMpCcffpeiIrVvL28s05BBvBQ-CholXV2CaxS4ds3O7OKth7OYz3y0ME6StyGCErsTchzwD7AfZqZER2oWWBhj-_XHNeV_5-8yWzi-ZiFyTbVbk')"></div>
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="text-navy dark:text-white text-lg font-bold mb-2">Sintra Vers (Rigid PVC)</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">Premium lightweight expanded PVC. Various thicknesses available for diverse applications.</p>
+<button class="w-full py-2.5 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-bold text-center">
+                                View Specifications
+                            </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md">
+<div class="w-full h-48 bg-slate-200 dark:bg-slate-700 bg-center bg-cover" data-alt="Rolls of corrugated paperboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWAUYoJAxjbEvnWXgtDjM9qz1wwJEVpExHEiD_jI-dI_NffBWC9POfcZf0F0WlnmIlZ2Jr5R7ceThKwbMFhHegrUG0q-DPLlw2JwHlagjJxNOZl_Kvj9lE0hzBfnbdrQRu27TIjXpv5e_hjqefMXQMLv1HIC6SdvooIqrYXVXkTI9bzNVGR4LQEbT85sVmMNfkETJf7O2chqsIZRLyQ7tsFAknrCdvR_lXSCwmg8pbnHZj-mrq3ovxOb48LgChafSN4emK16txZ3g')"></div>
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="text-navy dark:text-white text-lg font-bold mb-2">B-Flute Paperboard</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">Sustainable and durable packaging substrate. Excellent crush resistance and printability.</p>
+<button class="w-full py-2.5 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-bold text-center">
+                                View Specifications
+                            </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md">
+<div class="w-full h-48 bg-slate-200 dark:bg-slate-700 bg-center bg-cover" data-alt="Textured white synthetic sheet material" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6-CsfIMwsOuqvWexR_63pANDnK6wpg_d450aC6AkrNVpqpafUWRt8Nv02rX5AbvjLyZebhHTGFFuf4Q-nFoCPiI7kKILSQEuRbG6A0dSlS3GDRMv10SAi0PYwAfnWklc43uCN4mE1DotyV28BJXzMk7YqI9-Kgm6s2ytz4NgvDC_21lsXsmFbv9DV3TOlf7jTwquCYiqBIuE0k7zLSKeB4GAOT0XMhTI05DC7nuh2eLV5W3hVB59spSCpkEmiaj2owYK6ZjW-X1I')"></div>
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="text-navy dark:text-white text-lg font-bold mb-2">AkyPrint</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">Bubble-structure polypropylene sheet. Lightweight, rigid, and perfect for two-sided printing.</p>
+<button class="w-full py-2.5 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-bold text-center">
+                                View Specifications
+                            </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md">
+<div class="w-full h-48 bg-slate-200 dark:bg-slate-700 bg-center bg-cover" data-alt="Smooth white coated paperboard stack" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDF7I7R0E4jq4zpQ4j-pbmafTA28OulkQ9wkjPJFwgymapKfJkBrS624DxP8s_Ud_S_M6_CY53w-9FO75ZWT-xp0tsrEEBk1hrhKDErkwOKiDCHbwwmwHSapVrx_lBwKrp58Tq9J3GIj2InzQTRLINUqxjlyykqQQuo8ZvdzznprpXP_RsZQ0d0TdKtHbND_etR5VFtWqRaS2OfAPBqGfvoi8xIZtxEY-uiCuRs4S7_MhkRHHDKAdC1UfNfeMCxX0YBXtMQdrL_b5A')"></div>
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="text-navy dark:text-white text-lg font-bold mb-2">C2S White EE Flute</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">High-quality printing paper board with coated surfaces on both sides for superior graphics.</p>
+<button class="w-full py-2.5 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-bold text-center">
+                                View Specifications
+                            </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md">
+<div class="w-full h-48 bg-slate-200 dark:bg-slate-700 bg-center bg-cover" data-alt="Dark flexible magnetic sheet roll" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrNmnuhbrTCjQLlz_gSZmo-mNwwZv1mK23XDxfAlvSbujK-Hyzz_ZrHzvvI82GbRbuzX6WRhwg8EgcyCGMoXc9auk6WSihTfOkJzHSM27XCmOFx2H2Z4meGdG2F2fkRSbTHcVnIfHH2sq4Cr1ryF3YLnHRYFQ5KJ68fWLv6O4dRXoyvC2KZVrj0vQIRR32IrfKsRHxwzfuyTapD414DN1MqQd8OM0ZNQNynS4pM9cnzsymNSUFvK29TD7elhcumBpjLxipMTXVspM')"></div>
+<div class="p-5 flex-1 flex flex-col">
+<h4 class="text-navy dark:text-white text-lg font-bold mb-2">Newlife ST540 Platinum</h4>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-1">Advanced magnetic receptive material for quick-change retail graphics and displays.</p>
+<button class="w-full py-2.5 rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-bold text-center">
+                                View Specifications
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-navy mt-12 py-16 px-6 lg:px-12 text-center rounded-xl mx-6 lg:mx-12 mb-12 shadow-lg">
+<h2 class="text-white text-3xl font-bold mb-4">Need to see it in person?</h2>
+<p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">We understand the importance of feeling the material before making a decision. Request samples of any of our substrates today.</p>
+<button class="inline-flex items-center justify-center rounded-lg px-8 py-4 bg-primary hover:bg-primary-dark transition-colors text-white text-lg font-bold shadow-md gap-2">
+<span class="material-symbols-outlined">inventory_2</span>
+                Request a Product Sample
+            </button>
+</section>
+</main>
+<footer class="bg-navy text-white pt-16 pb-8 px-6 lg:px-12 mt-auto border-t border-slate-800">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">layers</span>
+<h2 class="text-white text-xl font-bold tracking-tight">AW Substrates</h2>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed max-w-xs">
+                    Your trusted partner for custom stocking and sourcing of building materials and printing substrates.
+                </p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Contact Us</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">call</span>
+<a class="hover:text-white transition-colors" href="tel:1-800-882-0386">1-800-882-0386</a>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-xl">location_on</span>
+<span>Elk Grove Village, IL</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Quick Links</h4>
+<ul class="space-y-3 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="/">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="/products/">Products Catalog</a></li>
+<li><a class="hover:text-primary transition-colors" href="/services/">Our Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="/about/">About Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+<p>© 2023 AW Substrates. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

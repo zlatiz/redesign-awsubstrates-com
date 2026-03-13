@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AW Substrates Services Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f7861d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#23190f",
+                        "slate-900": "#1a1a2e",
+                        "slate-100": "#f8f7f5"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+  @media (max-width: 768px) {
+    #mobile-menu-btn { display: block !important; }
+    #nav-links { display: none !important; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #1a1a2e; padding: 0.5rem 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    #nav-links.nav-open { display: flex !important; }
+    #nav-links a { padding: 0.75rem 2rem !important; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    img { max-width: 100%; height: auto; }
+  }
+  a:hover { color: #f7941d !important; }
+</style></head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur px-10 py-4 w-full max-w-[1440px] mx-auto">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tight">AW Substrates</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav style="background-color: #1a1a2e; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+  <a href="/" style="display: flex; align-items: center; padding: 0.75rem 0; text-decoration: none;">
+    <span style="color: #f7941d; font-weight: 900; font-size: 1.25rem;">AW</span>
+    <span style="color: white; font-weight: 400; font-size: 1.1rem; margin-left: 0.5rem;">Substrates</span>
+  </a>
+  <button id="mobile-menu-btn" onclick="document.getElementById('nav-links').classList.toggle('nav-open')" style="display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">&#9776;</button>
+  <div id="nav-links" style="display: flex; gap: 0;">
+    <a href="/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">Home</a>
+    <a href="/about/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">About</a>
+    <a href="/products/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">Products</a>
+    <a href="/services/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">Services</a>
+    <a href="/contact-us/" style="color: rgba(255,255,255,0.85); text-decoration: none; padding: 1rem 1.25rem; font-size: 0.875rem; font-weight: 500;">Contact Us</a>
+  </div>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-slate-900 text-sm font-bold hover:bg-primary/90 transition-colors shadow-sm">
+<span class="truncate">Call Now</span>
+</button>
+</div>
+</header>
+<main class="flex-1 w-full max-w-[1440px] mx-auto flex flex-col">
+<!-- Hero Section -->
+<section class="p-4 md:p-8 lg:p-12">
+<div class="flex min-h-[480px] lg:min-h-[560px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl md:rounded-2xl items-center justify-center p-8 text-center relative overflow-hidden shadow-lg" data-alt="Large scale industrial warehouse organization" style="background-image: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOGUttaAtepGzgp7_u-X_CpILwO2mVvnwJ5CHw4LzleuwMToQJ0LGo5-GaZ0Luh-4BgZIBMalHlZnDBUx_BFMr5ZfSrr_fOLxmgVnTKFxRF-74jyzUVwqNXL57gUejvrYiy8kfaUpOY_w1YI9ZZSy6sotrk4sGOkFLwqGB8TBbKBG4QJNA5Fnh35xlEyln4Ou0bAu96SA4doxIurMIJnnQYzDnN3Cy74Wjotk7m4JhaBhIYlvprlA-7S8UBQggWtZXg1KhszK8PMQ');">
+<div class="relative z-10 flex flex-col gap-6 max-w-4xl mx-auto items-center">
+<h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight drop-shadow-md">
+                            Custom Solutions Tailored to Your Business
+                        </h1>
+<p class="text-slate-200 text-base md:text-lg lg:text-xl font-medium leading-relaxed max-w-2xl drop-shadow">
+                            From on-demand converting to custom stocking, we provide the logistics and expertise to keep your projects moving.
+                        </p>
+<button class="mt-4 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary text-slate-900 text-base font-bold hover:bg-primary/90 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+<span class="truncate">Call Now</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="px-4 py-12 md:px-8 lg:px-12 lg:py-20 flex flex-col items-center">
+<div class="max-w-[1200px] w-full flex flex-col gap-12">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-3xl md:text-4xl font-black leading-tight tracking-tight">
+                            Our Services
+                        </h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+                            We offer a comprehensive range of industrial services designed to meet your specific operational and material needs.
+                        </p>
+<div class="h-1 w-20 bg-primary rounded-full mt-2"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<!-- Service Card 1 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 md:p-8 hover:shadow-lg transition-shadow duration-300 hover:border-primary/30 group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">warehouse</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold leading-tight group-hover:text-primary transition-colors">Custom Stocking Programs</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Dedicated inventory management to ensure your materials are always ready when you need them.</p>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 md:p-8 hover:shadow-lg transition-shadow duration-300 hover:border-primary/30 group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">content_cut</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold leading-tight group-hover:text-primary transition-colors">On-Demand Roll Converting</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Precision slitting and rewinding to your exact specifications, optimizing material usage.</p>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 md:p-8 hover:shadow-lg transition-shadow duration-300 hover:border-primary/30 group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">view_column</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold leading-tight group-hover:text-primary transition-colors">Custom Substrate Configurations</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Specialized sizing and sheeting specifically tailored for your unique applications.</p>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 md:p-8 hover:shadow-lg transition-shadow duration-300 hover:border-primary/30 group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">search_insights</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold leading-tight group-hover:text-primary transition-colors">Material Research &amp; Sourcing</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Tapping into our 70+ year network to find the exact substrate you need for your project.</p>
+</div>
+</div>
+<!-- Service Card 5 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 p-6 md:p-8 hover:shadow-lg transition-shadow duration-300 hover:border-primary/30 group">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">local_shipping</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold leading-tight group-hover:text-primary transition-colors">Delivery Logistics</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Reliable shipping and handling coordinated directly from our central Elk Grove Village hub.</p>
+</div>
+</div>
+<!-- Empty slot to balance grid if needed or could be an 'Explore All' card -->
+<div class="flex flex-col items-center justify-center gap-4 rounded-xl border-2 border-dashed border-slate-200 dark:border-slate-800 bg-transparent p-6 md:p-8 hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-pointer group">
+<div class="size-12 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 group-hover:bg-primary/10 group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
+</div>
+<span class="font-bold text-slate-500 group-hover:text-primary transition-colors">View All Capabilities</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="bg-[#1a1a2e] text-white py-16 md:py-24 px-4 w-full mt-8">
+<div class="max-w-[1200px] mx-auto flex flex-col gap-12">
+<div class="text-center flex flex-col items-center gap-4">
+<h2 class="text-3xl md:text-4xl font-black leading-tight">Why Partner With AW Substrates?</h2>
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
+<div class="flex flex-col items-center text-center gap-4 p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl">history</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-3xl font-black text-primary">70+ Years</h3>
+<p class="text-lg font-medium text-slate-300">Experience</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl">groups</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-3xl font-black text-primary">3500+</h3>
+<p class="text-lg font-medium text-slate-300">Satisfied Customers</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4 p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary text-5xl">favorite</span>
+<div class="flex flex-col gap-2">
+<h3 class="text-3xl font-black text-primary">100%</h3>
+<p class="text-lg font-medium text-slate-300">Service is our Passion!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="p-4 md:p-8 lg:p-12 -mt-10 relative z-10 max-w-[1000px] mx-auto w-full">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 bg-primary rounded-2xl p-8 md:p-12 shadow-xl border border-primary/20">
+<div class="flex flex-col gap-3 text-slate-900 max-w-lg text-center md:text-left">
+<h2 class="text-2xl md:text-3xl font-black leading-tight">Need a Custom Configuration?</h2>
+<p class="text-base md:text-lg font-medium opacity-90">Talk to our specialists today to find the perfect solution for your specific application requirements.</p>
+</div>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-[#1a1a2e] text-white text-base font-bold hover:bg-black transition-colors shadow-md whitespace-nowrap">
+<span class="truncate">Request a Quote</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1a1a2e] text-slate-300 py-12 px-10 w-full max-w-[1440px] mx-auto border-t border-white/10 mt-12">
+<div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 max-w-[1200px] mx-auto">
+<div class="flex flex-col gap-4 text-center md:text-left">
+<div class="flex items-center gap-3 text-white justify-center md:justify-start">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold">AW Substrates</h2>
+</div>
+<p class="text-sm max-w-xs opacity-80">Supplying quality building materials and custom substrate solutions since 1952.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-8 sm:gap-16 text-center sm:text-left">
+<div class="flex flex-col gap-4">
+<h3 class="text-white font-bold tracking-wide">Contact</h3>
+<div class="flex flex-col gap-2 text-sm opacity-80">
+<a class="hover:text-primary transition-colors flex items-center justify-center sm:justify-start gap-2" href="tel:1-800-882-0386">
+<span class="material-symbols-outlined text-lg">call</span>
+                                1-800-882-0386
+                            </a>
+<div class="flex items-center justify-center sm:justify-start gap-2">
+<span class="material-symbols-outlined text-lg">location_on</span>
+                                Elk Grove Village, IL
+                            </div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-white font-bold tracking-wide">Links</h3>
+<div class="flex flex-col gap-2 text-sm opacity-80">
+<a class="hover:text-primary transition-colors" href="/about/">About Us</a>
+<a class="hover:text-primary transition-colors" href="/products/">Products</a>
+<a class="hover:text-primary transition-colors" href="/services/">Services</a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 mt-12 pt-8 text-center text-xs opacity-60 flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto">
+<p>© 2024 AW Substrates. All rights reserved.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<a class="hover:text-primary" href="/">Privacy Policy</a>
+<a class="hover:text-primary" href="/">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
